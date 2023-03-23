@@ -1,0 +1,53 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@protected": true,
+    "name": "http://schema.org/name",
+    "description": "http://schema.org/description",
+    "identifier": "http://schema.org/identifier",
+    "image": {
+      "@id": "http://schema.org/image",
+      "@type": "@id"
+    },
+    "VaccinationCard": {
+      "@id": "https://w3id.org/citizenship#PermanentResidentCard",
+      "@context": {
+        "@version": 1.1,
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "description": "http://schema.org/description",
+        "name": "http://schema.org/name",
+        "identifier": "http://schema.org/identifier",
+        "image": {
+          "@id": "http://schema.org/image",
+          "@type": "@id"
+        }
+      }
+    },
+    "Vaccination": {
+      "@id": "https://w3id.org/citizenship#PermanentResident",
+      "@context": {
+        "@version": 1.1,
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "schema": "http://schema.org/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "batchNumber": "schema:batchNumber",
+        "countryOfVaccination": "schema:countryOfVaccination",
+        "dateOfVaccination": {
+          "@id": "schema:dateOfVaccination",
+          "@type": "xsd:dateTime"
+        },
+        "disease": "schema:disease",
+        "display": "schema:display",
+        "doseNumber": "schema:doseNumber",
+        "dosesPerCycle": "schema:dosesPerCycle",
+        "marketingAuthorizationHolder": "schema:marketingAuthorizationHolder",
+        "medicinalProductCode": "schema:medicinalProductCode",
+        "stateOfVaccination": "schema:stateOfVaccination"
+      }
+    }
+  }
+}
